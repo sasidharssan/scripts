@@ -1,0 +1,4 @@
+#!/bin/sh
+
+v4l2-ctl --set-fmt-video=width=640;
+mpv /dev/video0;

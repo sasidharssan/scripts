@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat ~/.local/bin/list | dmenu -i -l 10 -p emojis | awk -F'[:]' '{print $1}' | xclip -selection clipboard

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+wal -i $1 >/dev/null
+#sed -i '/urg/ d; s/const\s//g' /home/deathstroke/.cache/wal/colors-wal-dwm.h
+cd /home/deathstroke/.gitapps/dwm
+sudo make clean install
+
